@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>bitbash</title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div class="title">bitbash</div>
+      <div class="hint">Comandos: <code>help</code>, <code>pwd</code>, <code>ls</code>, <code>cd</code>, <code>cat</code>, <code>./event.sh</code>, <code>clear</code></div>
+    </header>
+
+    <section class="terminal" id="terminal" aria-label="Terminal">
+      <div class="output" id="output"></div>
+
+      <div class="inputrow">
+        <span class="prompt" id="prompt"></span>
+        <input
+          id="cmd"
+          class="cmd"
+          type="text"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-label="Entrada de comandos"
+        />
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
